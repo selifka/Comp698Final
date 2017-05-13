@@ -225,11 +225,18 @@ ansible.
 
 1) cd into your ansible folder. 
 2) Then use the following command:
+
         ansible-playbook configure-host.yml -v --extra-vars "student_username=xxxxxxx"
+        
 3) Once this has been setup, run the following command:
+
         ansible-playbook deploy-website-production.yml
+        
 4) Once this has been setup, run the following command:
+
         ansible-playbook deploy-website-staging.yml
+        
 5) Now that these containers are setup and running, you should be able to navigate to the AWS IP, followed by the port numbers, and the 
 HTML webpages you created. You should now see your website! You can also navigate to...
+
         AWSIP:PortNumber/metrics to see your page metrics.

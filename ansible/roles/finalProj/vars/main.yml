@@ -1,0 +1,5 @@
+---
+# Here we define variables in a key: value setting
+# that will be used in the unh698 role.
+finalProj_image: selifka/comp698final
+finalProj_command: python3 finalProj.py

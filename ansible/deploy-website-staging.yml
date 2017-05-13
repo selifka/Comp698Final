@@ -1,0 +1,13 @@
+---
+# The production version of docker-cloud-test should be the image that includes the website with
+# your topic subpage.  This version of the website should be available on port 8081 of your server.
+- name: Deploy the staging version of your website based on the newest tag of your docker-cloud-test image
+  hosts: localhost
+  become: true
+  vars:
+    finalProj_environment: staging
+    finalProj_image_version: release-0.0.2
+    finalProj_host_port: 8081
+    finalProj_container_port: 5000
+  roles:
+    - finalProj

@@ -1,0 +1,7 @@
+---
+# Make it a little easier for you by adding your
+- name: Adding user to group docker
+  user:
+    name: "{{ student_name }}"
+    group: docker
+    append: yes

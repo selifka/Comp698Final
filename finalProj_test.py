@@ -23,11 +23,11 @@ class FlaskrTestCase(unittest.TestCase):
         # Replace xxxxxxxxxxxx with text you'd expect to see on your main page that links to your subpage
         assert b'Coffee' in rv.data
 
-    def test_my_topic(self):
+        #def test_my_topic(self):
         # Replace '/' with the page path you want to make
-        rv = self.app.get('/coffeesubpage')  
+        #rv = self.app.get('/coffeesubpage')  
         # Replace UNH698 Website with the text you expect to see on you topic page
-        assert b'Welcome to my coffee subpage' in rv.data
+        #assert b'Welcome to my coffee subpage' in rv.data
 
 if __name__ == '__main__':
     unittest.main()

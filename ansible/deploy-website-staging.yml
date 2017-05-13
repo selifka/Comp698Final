@@ -6,7 +6,7 @@
   become: true
   vars:
     finalProj_environment: staging
-    finalProj_image_version: release-0.0.3
+    finalProj_image_version: release-0.0.2
     finalProj_host_port: 8081
     finalProj_container_port: 5000
   roles:

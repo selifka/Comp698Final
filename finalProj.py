@@ -11,9 +11,9 @@ setup_metrics(app)
 def coffee():
     return render_template('coffee.html')
 
-@app.route('/coffeesubpage')
-def coffeesubpage():
-    return render_template('coffeesubpage.html')
+#@app.route('/coffeesubpage')
+#def coffeesubpage():
+#return render_template('coffeesubpage.html')
 
 if __name__ == '__main__':
   app.run(debug=True, host='0.0.0.0')
